@@ -16,15 +16,13 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.dark {
+  background: #000;
 }
+
+/* .light-bg {
+  background: rgb(245, 245, 245);
+} */
 
 @layer utilities {
   .text-balance {
