@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={theme}>
       <body className={inter.className}>
-        <NavBar theme={theme} setTheme={setTheme}/>
+      <NavBar theme={theme} setTheme={setTheme}/>
         {children}
       </body>
     </html>

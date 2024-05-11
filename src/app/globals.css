@@ -24,6 +24,22 @@
   background: rgb(245, 245, 245);
 } */
 
+.heroBg { 
+  height: 60vh;
+  width: 100%;
+  margin-top: 50px;
+  background-image: url('../../src/app/Assets/design1.jpg');
+  background-size: cover;
+  background-position:bottom;
+  filter: brightness(50%);
+  z-index: 1;
+}
+.heroBgChild {
+  text-shadow: 2px 2px #000;
+}
+.heroBgChild1 {
+  text-shadow: 1px 1px #fff;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

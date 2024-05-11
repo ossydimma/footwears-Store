@@ -38,17 +38,17 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
   }, []);
   return (
     <nav
-      className={`fixed  top-0 w-[100%] border-b-2 border-[#484848]  z-10  `}
+      className={`fixed  top-0 w-[100%] border-b-2 border-[#484848]  z-10`}
     >
       <div
         className={
-          " relative flex items-center justify-between mx-14 lg:  h-[8vh] sm:h-[12vh]  pt-4 pb-4   sm:pt-6   "
+          " relative flex items-center justify-between mx-14 lg:  h-[8vh] sm:h-[10vh]  pt-4 pb-4   sm:pt-6   "
         }
       >
         <h2
-          className={` text-black text-xl font-medium sm:text-2xl dark:text-white `}
+          className={` text-black text-xl font-medium sm:text-2xl dark:text-white uppercase `}
         >
-          OSITA JERRY
+          FootWear Store
         </h2>
 
         {/* <--------------------------------  MENU CENTER  ------------------------------> */}
@@ -80,7 +80,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
                 </svg>
               </li>
               <li
-                className={`border-b-2 pb-7 lg:pb-[46px] border-[#c7c7c7] hover:border-[#fff] dark:border-[#0a0a0a] hover:lg:border-[#0a0a0a] dark:hover:lg:border-[#fff] dark:hover:border-[#c7c7c7] lg:border-b-0  lg:hover:border-b-[3px]`}
+                className={` border-b-2 pb-7 lg:pb-[40px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
               >
                 <Link
                   href="/"
@@ -93,7 +93,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
                 </Link>
               </li>
               <li
-                className={` border-b-2 pb-7 lg:pb-[46px] border-[#c7c7c7] hover:border-[#fff] dark:border-[#0a0a0a] hover:lg:border-[#0a0a0a] dark:hover:lg:border-[#fff] dark:hover:border-[#c7c7c7] lg:border-b-0  lg:hover:border-b-[3px]`}
+                className={` border-b-2 pb-7 lg:pb-[40px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
               >
                 <Link
                   href="/about"
@@ -108,7 +108,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
               </li>
 
               <li
-                className={` border-b-2 pb-7 lg:pb-[46px] border-[#c7c7c7] hover:border-[#fff] dark:border-[#0a0a0a] hover:lg:border-[#0a0a0a] dark:hover:lg:border-[#fff] dark:hover:border-[#c7c7c7] lg:border-b-0  lg:hover:border-b-[3px]`}
+               className={` border-b-2 pb-7 lg:pb-[40px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
               >
                 <Link
                   href="/contact"
