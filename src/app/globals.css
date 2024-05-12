@@ -20,12 +20,16 @@
   background: #000;
 }
 
+.navTrans {
+  transition: border-color 1s ease-in;
+}
+
 /* .light-bg {
   background: rgb(245, 245, 245);
 } */
 
 .heroBg { 
-  height: 60vh;
+  /* height: 60vh; */
   width: 100%;
   margin-top: 50px;
   background-image: url('../../src/app/Assets/design1.jpg');
@@ -34,12 +38,37 @@
   filter: brightness(50%);
   z-index: 1;
 }
+.heroBg1 {
+  /* height: 60vh; */
+  width: 100%;
+  margin-top: 50px;
+  background-image: url('../../src/app/Assets/design4.jpg');
+  filter: brightness(50%);
+  background-size: cover;
+  background-position: left bottom;
+}
 .heroBgChild {
   text-shadow: 2px 2px #000;
 }
 .heroBgChild1 {
   text-shadow: 1px 1px #fff;
 }
+
+.buttonTrans {
+  background: linear-gradient(to left, #ff4d4d 50%, black 50%) right;
+  background-size: 300% 100%;
+  transition: .5s ease-out;
+  stroke: #000;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.buttonTrans:hover {
+  background-position: left;
+  color: #fff;
+  stroke: #fff;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

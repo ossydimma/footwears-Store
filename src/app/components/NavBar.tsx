@@ -38,15 +38,15 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
   }, []);
   return (
     <nav
-      className={`fixed  top-0 w-[100%] border-b-2 border-[#484848]  z-10`}
+      className={`fixed  top-0 w-[100%] border-b-2 border-[#484848] bg-inherit  z-10`}
     >
       <div
         className={
-          " relative flex items-center justify-between mx-14 lg:  h-[8vh] sm:h-[10vh]  pt-4 pb-4   sm:pt-6   "
+          " relative flex items-center justify-between mx-4 sm:mx-6 lg:mx-14 lg:  h-[8vh] sm:h-[10vh]  pt-4 pb-4   sm:pt-6   "
         }
       >
         <h2
-          className={` text-black text-xl font-medium sm:text-2xl dark:text-white uppercase `}
+          className={` text-black text-sm font-medium sm:text-2xl dark:text-white uppercase `}
         >
           FootWear Store
         </h2>
@@ -56,7 +56,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
           {showMenu && (
             <ul
               className={clsx(
-                `   h-screen w-[62%] pb-20 px-3 flex flex-col font-medium text-xl  z-20 gap-[50px] bg-black dark:bg-[#f3f3f5]  absolute right-[-45px] top-0 fill-[#0a0a0a] sm:right-[-28px] lg:flex-row lg:static lg:bg-[inherit] lg:h-6 lg:w-auto lg:pb-0 lg:pl-0 lg:pr-16 dark:lg:bg-[inherit] text-[#c7c7c7] dark:text-[#0e0d0e]  dark:lg:text-[#c7c7c7] lg:text-[#0a0a0a]`,
+                `    h-screen w-[62%] pb-20 px-3 flex flex-col font-medium text-xl  z-20 gap-[50px] bg-black dark:bg-[#f3f3f5]  absolute right-[-45px] top-0 fill-[#0a0a0a] sm:right-[-28px] lg:flex-row lg:static lg:bg-[inherit] lg:h-6 lg:w-auto lg:pb-0 lg:pl-0 lg:pr-16 dark:lg:bg-[inherit] text-[#c7c7c7] dark:text-[#0e0d0e]  dark:lg:text-[#c7c7c7] lg:text-[#0a0a0a]`,
                 {
                   " dark:lg:text-[#c7c7c7] dark:lg:fill-[#c7c7c7] ":
                     theme !== "dark",
@@ -80,12 +80,12 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
                 </svg>
               </li>
               <li
-                className={` border-b-2 pb-7 lg:pb-[40px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
+                className={` border-b-2 pb-7 lg:pb-[38px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
               >
                 <Link
                   href="/"
                   className={
-                    pathname === "/" ? " dark:lg:text-[#fff] text-white dark:text-[#201f20] lg:text-[#201f20] " : ""
+                    pathname === "/" ? "  text-[#ff4d4d] " : ""
                   }
                 >
                   {" "}
@@ -93,13 +93,13 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
                 </Link>
               </li>
               <li
-                className={` border-b-2 pb-7 lg:pb-[40px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
+                className={` border-b-2 pb-7 lg:pb-[38px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
               >
                 <Link
-                  href="/about"
+                  href="/product"
                   className={
                     pathname === "/product"
-                      ? "dark:lg:text-[#fff] text-white dark:text-[#201f20] lg:text-[#201f20] "
+                      ? "text-[#ff4d4d] "
                       : ""
                   }
                 >
@@ -108,13 +108,13 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
               </li>
 
               <li
-               className={` border-b-2 pb-7 lg:pb-[40px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
+               className={` border-b-2 pb-7 lg:pb-[38px] border-[#c7c7c7] hover:border-[#ff4d4d] dark:border-[#0a0a0a]  dark:hover:border-[#ff4d4d] lg:border-b-0  lg:hover:border-b-[3px]`}
               >
                 <Link
                   href="/contact"
                   className={
                     pathname === "/contact"
-                      ? "dark:lg:text-[#fff] text-white dark:text-[#201f20] lg:text-[#201f20]"
+                      ? "text-[#ff4d4d]"
                       : ""
                   }
                 >
@@ -128,7 +128,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
 
         </div>
          {/* <------------------- MENU RIGHT ------------------> */}
-        <ul className=" flex items-center gap-5 stroke-black dark:stroke-white">
+        <ul className=" flex items-center gap-2 lg:gap-5 stroke-black dark:stroke-white">
 
           {/* Search icon  */}
 
@@ -141,7 +141,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
             <span className=" static lg:absolute top-[1.9px] left-[2px] rounded-full hover:bg-none lg:hover:bg-[#c7c7c7] p-1.5 dark:hover:lg:bg-[#191919]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-search w-5 h-5 Lg:w-6 Lg:h-6 "
+                className="icon icon-tabler icon-tabler-search w-4 sm:w-5 Lg:w-6"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 fill="none"
@@ -160,7 +160,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
           <li className=" cursor-pointer hover:stroke-[gray]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-heart-plus  w-5 h-5 Lg:w-6 Lg:h-6"
+              className="icon icon-tabler icon-tabler-heart-plus w-4 sm:w-5 Lg:w-6 "
               viewBox="0 0 24 24"
               stroke-width="1.5"
               fill="none"
@@ -179,7 +179,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
           <li className=" cursor-pointer hover:stroke-[gray]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-shopping-cart  w-5 h-5 Lg:w-6 Lg:h-6"
+              className="icon icon-tabler icon-tabler-shopping-cart  w-4 sm:w-5 Lg:w-6"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               fill="none"
@@ -199,7 +199,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
           <li className=" cursor-pointer hover:stroke-[gray]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-user  w-5 h-5 Lg:w-6 Lg:h-6"
+              className="icon icon-tabler icon-tabler-user  w-4 sm:w-5 Lg:w-6"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               fill="none"
@@ -231,7 +231,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
             {isDark && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-sun  w-5 h-5 Lg:w-6 Lg:h-6"
+                className="icon icon-tabler icon-tabler-sun  w-4 sm:w-5 Lg:w-6"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 fill="none"
@@ -247,7 +247,7 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
             {!isDark && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-moon-filled  w-5 h-5 Lg:w-6 Lg:h-6"
+                className="icon icon-tabler icon-tabler-moon-filled  w-4 sm:w-5 Lg:w-6"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 strokeLinecap="round"
