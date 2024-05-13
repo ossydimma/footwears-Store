@@ -162,10 +162,10 @@ export const NavBar = ({ theme, setTheme }: themeType) => {
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-heart-plus w-4 sm:w-5 Lg:w-6 "
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" />

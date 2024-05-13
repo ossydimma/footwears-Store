@@ -4,7 +4,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Playfair_Display, Roboto_Condensed } from "next/font/google";
-import { useRef } from "react";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const roboto = Roboto_Condensed({ subsets: ["latin"] });
@@ -12,7 +11,7 @@ const roboto = Roboto_Condensed({ subsets: ["latin"] });
 const Hero = () => {
 
   return (
-    <main className="w-[100wv]  lg:mt-[2vh] ">
+    <main className="w-[100wv] mt-1  lg:mt-[2vh] ">
       <section>
         <Swiper
           autoplay={{
@@ -74,7 +73,7 @@ const Hero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className=" w-5 sm:w-6 lg:w-8 "
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
                     strokeLinecap="round"
@@ -128,7 +127,7 @@ const Hero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className=" w-5 sm:w-6 lg:w-8 "
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
                     strokeLinecap="round"

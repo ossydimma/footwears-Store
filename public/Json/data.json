@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "title" : " Signature design ",
+        "old_price" : "35,000",
+        "price" : "32,000",
+        "images" : ["../../../src/app/Assets/productimg2.jpg", "../../../src/app/Assets/productimg2.jpg"]
+    },
+    {
+        "id" : 1,
+        "title" : " Signature design ",
+        "old_price" : "35,000",
+        "price" : "32,000",
+        "images" : ["../../../src/app/Assets/productimg2.jpg", "../../../src/app/Assets/productimg2.jpg"]
+    },
+    {
+        "id" : 1,
+        "title" : " Signature design ",
+        "old_price" : "35,000",
+        "price" : "32,000",
+        "images" : ["../../../src/app/Assets/productimg2.jpg", "../../../src/app/Assets/productimg2.jpg"]
+    }
+]
